@@ -14,7 +14,6 @@
 		2B0E3FA1196951EB00B85433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FA0196951EB00B85433 /* main.m */; };
 		2B0E3FA5196951EB00B85433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FA4196951EB00B85433 /* AppDelegate.m */; };
 		2B0E3FA8196951EB00B85433 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E3FA6196951EB00B85433 /* Main_iPhone.storyboard */; };
-		2B0E3FAB196951EB00B85433 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E3FA9196951EB00B85433 /* Main_iPad.storyboard */; };
 		2B0E3FAE196951EB00B85433 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FAD196951EB00B85433 /* ViewController.m */; };
 		2B0E3FB0196951EB00B85433 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E3FAF196951EB00B85433 /* Images.xcassets */; };
 		2B0E3FB7196951EB00B85433 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0E3FB6196951EB00B85433 /* XCTest.framework */; };
@@ -22,6 +21,11 @@
 		2B0E3FB9196951EB00B85433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0E3F98196951EB00B85433 /* UIKit.framework */; };
 		2B0E3FC1196951EB00B85433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E3FBF196951EB00B85433 /* InfoPlist.strings */; };
 		2B0E3FC3196951EB00B85433 /* TableViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FC2196951EB00B85433 /* TableViewSampleTests.m */; };
+		2B0E3FCE1969555400B85433 /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E3FCD1969555400B85433 /* TableViewCustomCell.xib */; };
+		2B0E3FD1196956AF00B85433 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FD0196956AF00B85433 /* CustomTableViewCell.m */; };
+		2B0E3FD31969596C00B85433 /* ios1-100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E3FD21969596C00B85433 /* ios1-100x100.png */; };
+		2B0E3FD619695B9000B85433 /* TableViewInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FD519695B9000B85433 /* TableViewInterceptor.m */; };
+		2B0E3FDA19695C5100B85433 /* ShopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E3FD919695C5100B85433 /* ShopTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +50,6 @@
 		2B0E3FA3196951EB00B85433 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B0E3FA4196951EB00B85433 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2B0E3FA7196951EB00B85433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		2B0E3FAA196951EB00B85433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		2B0E3FAC196951EB00B85433 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2B0E3FAD196951EB00B85433 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2B0E3FAF196951EB00B85433 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +58,14 @@
 		2B0E3FBE196951EB00B85433 /* TableViewSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewSampleTests-Info.plist"; sourceTree = "<group>"; };
 		2B0E3FC0196951EB00B85433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B0E3FC2196951EB00B85433 /* TableViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSampleTests.m; sourceTree = "<group>"; };
+		2B0E3FCD1969555400B85433 /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
+		2B0E3FCF196956AF00B85433 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		2B0E3FD0196956AF00B85433 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		2B0E3FD21969596C00B85433 /* ios1-100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios1-100x100.png"; sourceTree = "<group>"; };
+		2B0E3FD419695B9000B85433 /* TableViewInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewInterceptor.h; sourceTree = "<group>"; };
+		2B0E3FD519695B9000B85433 /* TableViewInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewInterceptor.m; sourceTree = "<group>"; };
+		2B0E3FD819695C5100B85433 /* ShopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableView.h; sourceTree = "<group>"; };
+		2B0E3FD919695C5100B85433 /* ShopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +125,11 @@
 		2B0E3F9A196951EB00B85433 /* TableViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				2B0E3FD719695C0000B85433 /* TableView */,
+				2B0E3FCC1969550F00B85433 /* TableViewCell */,
 				2B0E3FA3196951EB00B85433 /* AppDelegate.h */,
 				2B0E3FA4196951EB00B85433 /* AppDelegate.m */,
 				2B0E3FA6196951EB00B85433 /* Main_iPhone.storyboard */,
-				2B0E3FA9196951EB00B85433 /* Main_iPad.storyboard */,
 				2B0E3FAC196951EB00B85433 /* ViewController.h */,
 				2B0E3FAD196951EB00B85433 /* ViewController.m */,
 				2B0E3FAF196951EB00B85433 /* Images.xcassets */,
@@ -129,6 +141,7 @@
 		2B0E3F9B196951EB00B85433 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B0E3FD21969596C00B85433 /* ios1-100x100.png */,
 				2B0E3F9C196951EB00B85433 /* TableViewSample-Info.plist */,
 				2B0E3F9D196951EB00B85433 /* InfoPlist.strings */,
 				2B0E3FA0196951EB00B85433 /* main.m */,
@@ -153,6 +166,27 @@
 				2B0E3FBF196951EB00B85433 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B0E3FCC1969550F00B85433 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E3FCD1969555400B85433 /* TableViewCustomCell.xib */,
+				2B0E3FCF196956AF00B85433 /* CustomTableViewCell.h */,
+				2B0E3FD0196956AF00B85433 /* CustomTableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		2B0E3FD719695C0000B85433 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E3FD419695B9000B85433 /* TableViewInterceptor.h */,
+				2B0E3FD519695B9000B85433 /* TableViewInterceptor.m */,
+				2B0E3FD819695C5100B85433 /* ShopTableView.h */,
+				2B0E3FD919695C5100B85433 /* ShopTableView.m */,
+			);
+			name = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0E3FAB196951EB00B85433 /* Main_iPad.storyboard in Resources */,
+				2B0E3FD31969596C00B85433 /* ios1-100x100.png in Resources */,
 				2B0E3FB0196951EB00B85433 /* Images.xcassets in Resources */,
 				2B0E3FA8196951EB00B85433 /* Main_iPhone.storyboard in Resources */,
+				2B0E3FCE1969555400B85433 /* TableViewCustomCell.xib in Resources */,
 				2B0E3F9F196951EB00B85433 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,7 +290,10 @@
 			files = (
 				2B0E3FAE196951EB00B85433 /* ViewController.m in Sources */,
 				2B0E3FA5196951EB00B85433 /* AppDelegate.m in Sources */,
+				2B0E3FD1196956AF00B85433 /* CustomTableViewCell.m in Sources */,
+				2B0E3FD619695B9000B85433 /* TableViewInterceptor.m in Sources */,
 				2B0E3FA1196951EB00B85433 /* main.m in Sources */,
+				2B0E3FDA19695C5100B85433 /* ShopTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +330,6 @@
 				2B0E3FA7196951EB00B85433 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		2B0E3FA9196951EB00B85433 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B0E3FAA196951EB00B85433 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		2B0E3FBF196951EB00B85433 /* InfoPlist.strings */ = {
