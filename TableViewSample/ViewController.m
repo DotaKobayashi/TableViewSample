@@ -23,6 +23,11 @@
 
 @implementation ViewController
 
+//アラート画面のタグを宣言
+static const NSInteger firstAlertTag = 1;
+static const NSInteger secondAlertTag = 2;
+NSTimer *myTimer;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,6 +44,68 @@
     UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"Cell"];
     [self.searchDisplayController.searchResultsTableView registerNib:nib forCellReuseIdentifier:@"Cell"];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    myTimer =
+    [NSTimer scheduledTimerWithTimeInterval:0.1f //タイマーを発生させる間隔
+                                     target:self //タイマー発生時に呼び出すメソッドがあるターゲット
+                                   selector:@selector(timerCall:) //タイマー発生時に呼び出すメソッド
+                                   userInfo:nil //selectorに渡す情報(NSDictionary)
+                                    repeats:YES //リピート
+     ];
+    
+    UIAlertView *firstAlert = [[UIAlertView alloc] initWithTitle:@"AlertView"
+                                                        message:@"とめる"
+                                                       delegate:self
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"stop", nil];
+    firstAlert.tag = firstAlertTag;
+    [firstAlert show];
+
+}
+
+-(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == firstAlertTag)
+    {
+        [self otherButtonPushed];
+    }
+    else if (alertView.tag == secondAlertTag)
+    {
+        // 特になにもなし
+    }
+}
+
+- (void)otherButtonPushed
+{
+    [myTimer invalidate];
+    
+    // 余韻を持たす
+    CGPoint point = CGPointMake(0, self.tableView.contentOffset.y - 300);
+    [self.tableView setContentOffset:point animated:YES];
+ 
+    
+    // 止まる位置の店を取得 現在のスクロール位置をセルの高さで割って対象のセルを取得する
+    NSInteger idx = self.tableView.contentOffset.y / 80;
+    NSString *name = self.dataSourceiPhone[idx];
+    
+    UIAlertView *secondAlert = [[UIAlertView alloc] initWithTitle:@"AlertView"
+                                                        message:name
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil, nil];
+    secondAlert.tag = secondAlertTag;
+    [secondAlert show];
+    
+}
+
+-(void)timerCall:(NSTimer*)timer
+{
+    CGPoint point = CGPointMake(0, self.tableView.contentOffset.y - 300);
+    [self.tableView setContentOffset:point animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
